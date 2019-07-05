@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'contains/base.html' %}
+    {% block body_block %}
+        <form method="post">
+        <h1>Login to write exam</h1>
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">login</button>
+    </form>
+    {% endblock %}
+</body>
+</html>

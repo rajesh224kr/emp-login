@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+<body>
+    {% extends 'contains/base.html' %}
+    {% block body_block %}
+        <div class="jumbotron" align="center" >
+        <div class="container">
+            <h1 class="display-4">Welcome to Exam potal</h1>
+            <button type="submit" class="btn btn-primary"><a class="btn btn-primary" href="/python" role="">Python</a></button>
+            <button type="submit" class="btn btn-primary"><a class="btn btn-primary" href="/django" role="button">django</a></button>
+            <button type="submit" class="btn btn-primary"><a class="btn btn-primary" href="/java" role="button">Java</a></button>
+
+        </div>
+        </div>
+{% endblock %}
+</body>
+</html>
